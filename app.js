@@ -35,3 +35,10 @@ function alterarStatusBotao(){
 
   }
 }
+function reiniciar(){
+  document.getElementById("quantidade").value = '';
+  document.getElementById("de").value = '';
+  document.getElementById("ate").value = '';
+  document.getElementById("resultado").innerHTML = '<label class="texto__paragrafo">Números sorteados:  nenhum até agora</label>';
+  alterarStatusBotao();
+}
